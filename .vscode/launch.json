@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Unit Tests (LLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/unit_tests/unit_tests",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "sourceMap": {
+        ".": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Debug gateway",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/src/gateway/gateway",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "sourceMap": {
+        ".": "${workspaceFolder}"
+      }
+    }
+  ]
+}
